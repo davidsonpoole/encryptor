@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="encryptor:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e1776b89-b02f-4b5e-9ec8-3c3811262259" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../HELP.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../encryptor /.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../encryptor /.idea/artifacts/encryptor_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../encryptor /.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../encryptor /.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../encryptor /.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../encryptor /encryptor.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../encryptor /out/artifacts/encryptor_jar/encryptor.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../encryptor /out/production/encryptor/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../encryptor /out/production/encryptor/com/davidson/poole/encryptor/Encryptor$OpenL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../encryptor /out/production/encryptor/com/davidson/poole/encryptor/Encryptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../encryptor /out/production/encryptor/com/davidson/poole/encryptor/FileChooserTest$OpenL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../encryptor /out/production/encryptor/com/davidson/poole/encryptor/FileChooserTest$SaveL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../encryptor /out/production/encryptor/com/davidson/poole/encryptor/FileChooserTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../encryptor /src/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../encryptor /src/com/davidson/poole/encryptor/Encryptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../encryptor /src/com/davidson/poole/encryptor/FileChooserTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../encryptor copy/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../encryptor copy/.idea/libraries/encryptor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../encryptor copy/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../encryptor copy/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../encryptor copy/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../encryptor copy/encryptor.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../encryptor copy/out/artifacts/encryptor_jar/encryptor.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../encryptor copy/out/production/encryptor/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../encryptor copy/out/production/encryptor/com/davidson/poole/encryptor/Encryptor$OpenL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../encryptor copy/out/production/encryptor/com/davidson/poole/encryptor/Encryptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../encryptor copy/out/production/encryptor/com/davidson/poole/encryptor/FileChooserTest$OpenL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../encryptor copy/out/production/encryptor/com/davidson/poole/encryptor/FileChooserTest$SaveL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../encryptor copy/out/production/encryptor/com/davidson/poole/encryptor/FileChooserTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../encryptor copy/src/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../encryptor copy/src/com/davidson/poole/encryptor/Encryptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../encryptor copy/src/com/davidson/poole/encryptor/FileChooserTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../encryptor.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/encryptor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/encryptor_jar/encryptor.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/encryptor_jar/encryptor.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/encryptor/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/encryptor/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/encryptor/com/davidson/poole/encryptor/Encryptor$OpenL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/encryptor/com/davidson/poole/encryptor/Encryptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/encryptor/com/davidson/poole/encryptor/FileChooserTest$OpenL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/encryptor/com/davidson/poole/encryptor/FileChooserTest$SaveL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/encryptor/com/davidson/poole/encryptor/FileChooserTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/davidson/poole/encryptor/Encryptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/davidson/poole/encryptor/FileChooserTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/davidsonpoole/encryptor/Encryptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/davidsonpoole/encryptor/Encryptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/com/davidson/poole/encryptor/EncryptorApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/java/com/davidson/poole/encryptor/EncryptorApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1fp81GoOAaHKMzAL4tULvQvvhAX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager" selected="JAR Application.EncryptorJar">
+    <configuration name="Encryptor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.davidsonpoole.encryptor.Encryptor" />
+      <module name="encryptor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.davidsonpoole.encryptor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EncryptorJar" type="JarApplication">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/encryptor_jar/encryptor.jar" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="encryptor:jar" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Encryptor" />
+      <item itemvalue="JAR Application.EncryptorJar" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Encryptor" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e1776b89-b02f-4b5e-9ec8-3c3811262259" name="Default Changelist" comment="" />
+      <created>1596903458811</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596903458811</updated>
+      <workItem from="1596903461002" duration="130000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="427" y="193" key="#BuildArtifactsBeforeRunChooser" timestamp="1596903590818">
+      <screen x="0" y="23" width="1280" height="708" />
+    </state>
+    <state x="427" y="193" key="#BuildArtifactsBeforeRunChooser/0.23.1280.708@0.23.1280.708" timestamp="1596903590818" />
+    <state x="104" y="31" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596903591767">
+      <screen x="0" y="23" width="1280" height="708" />
+    </state>
+    <state x="104" y="31" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.708@0.23.1280.708" timestamp="1596903591767" />
+    <state x="377" y="174" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1596903538830">
+      <screen x="0" y="23" width="1280" height="708" />
+    </state>
+    <state x="377" y="174" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1280.708@0.23.1280.708" timestamp="1596903538830" />
+    <state width="1218" height="161" key="GridCell.Tab.0.bottom" timestamp="1596903516478">
+      <screen x="0" y="23" width="1280" height="708" />
+    </state>
+    <state width="1218" height="161" key="GridCell.Tab.0.bottom/0.23.1280.708@0.23.1280.708" timestamp="1596903516478" />
+    <state width="1218" height="161" key="GridCell.Tab.0.center" timestamp="1596903516477">
+      <screen x="0" y="23" width="1280" height="708" />
+    </state>
+    <state width="1218" height="161" key="GridCell.Tab.0.center/0.23.1280.708@0.23.1280.708" timestamp="1596903516477" />
+    <state width="1218" height="161" key="GridCell.Tab.0.left" timestamp="1596903516477">
+      <screen x="0" y="23" width="1280" height="708" />
+    </state>
+    <state width="1218" height="161" key="GridCell.Tab.0.left/0.23.1280.708@0.23.1280.708" timestamp="1596903516477" />
+    <state width="1218" height="161" key="GridCell.Tab.0.right" timestamp="1596903516478">
+      <screen x="0" y="23" width="1280" height="708" />
+    </state>
+    <state width="1218" height="161" key="GridCell.Tab.0.right/0.23.1280.708@0.23.1280.708" timestamp="1596903516478" />
+    <state x="128" y="23" key="SettingsEditor" timestamp="1596903543311">
+      <screen x="0" y="23" width="1280" height="708" />
+    </state>
+    <state x="128" y="23" key="SettingsEditor/0.23.1280.708@0.23.1280.708" timestamp="1596903543311" />
+  </component>
+</project>
