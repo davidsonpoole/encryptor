@@ -6,6 +6,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -76,14 +77,21 @@ public class Encryptor extends JFrame{
         }
     }
 
-    private static byte[] generate_AES_key() {
+    // Generate and Expand AES Key
+
+    private static int[] generate_AES_key() {
         Key key;
         SecureRandom rand = new SecureRandom();
         try {
             KeyGenerator generator = KeyGenerator.getInstance("AES");
             generator.init(256, rand);
              key = generator.generateKey();
-             return key.getEncoded();
+             byte[] encoded = key.getEncoded();
+             int[] unsigned_key = new int[encoded.length];
+             for (int i=0; i<encoded.length; i++) {
+                 unsigned_key[i] = encoded[i] & 0xff;
+             }
+             return unsigned_key;
         } catch (NoSuchAlgorithmException e) {
             System.out.println(e);
             return null;
@@ -120,19 +128,6 @@ public class Encryptor extends JFrame{
         return result;
     }
 
-    private static int subWord(int initial) {
-        return sbox[initial];
-    }
-
-    private static int[] rotWord(int[] initial) {
-        // rotate by 8 bits
-        int[] result = new int[4];
-        for (int i=0; i<4; i++) {
-            result[i] = initial[(i+1)%4];
-        }
-        return result;
-    }
-
     private static int[] schedule_core(int[] in, int i) {
         // takes in 32-bit/4-byte word
         int[] rotated = rotWord(in);
@@ -145,35 +140,70 @@ public class Encryptor extends JFrame{
         return result;
     }
 
-    public static void main(String[] args) {
-        //new Encryptor();
-        //File file = new File("/Users/davidson/Documents/testFile.txt");
-        //convertFile(file.toPath());
-        byte[] key = generate_AES_key();
-        int[] unsigned_key = new int[key.length];
-        for (int i=0; i<key.length; i++) {
-            unsigned_key[i] = key[i] & 0xff;
-            System.out.println(String.format("%02X ", unsigned_key[i]));
+    private static int[] rotWord(int[] initial) {
+        // rotate by 8 bits
+        int[] result = new int[4];
+        for (int i=0; i<4; i++) {
+            result[i] = initial[(i+1)%4];
         }
-        int[] expanded_key = expand_AES_key(unsigned_key);
-        for (int b: expanded_key) {
-            System.out.print(String.format("%02X ", b));
-        }
+        return result;
     }
 
-    public static void convertFile(Path pathName) {
+    private static int subWord(int initial) {
+        return sbox[initial];
+    }
+
+    // Encrypt file using key
+
+    private static int[] encryptFile(int[] fileContent, int[] key) {
+        int index = 0;
+
+        while (index < fileContent.length) {
+            // split into 16-byte blocks
+            int[][] data = new int[4][4];
+            for (int i=0; i< 4; i++) {
+                for (int j=0;j<4;j++) {
+                    data[j][i] = fileContent[index++];
+                }
+            }
+        }
+        return null;
+    }
+
+    public static void main(String[] args) {
+        //new Encryptor();
+        File file = new File("/Users/davidson/Documents/testFile.txt");
+        int[] key = generate_AES_key();
+        int[] expanded_key = expand_AES_key(key);
+        int[] fileContent = convertFile(file.toPath());
+        int[] encrypted = encryptFile(fileContent, expanded_key);
+    }
+
+    // -----File helper methods------
+
+    public static int[] convertFile(Path pathName) {
         try {
             byte[] fileContent = Files.readAllBytes(pathName);
-            byte[] encrypted = new byte[fileContent.length];
-            int count = 0;
-            for (byte bit: fileContent) {
-                bit += count;
-                encrypted[count] = bit;
-                count++;
+            if (fileContent.length % 16 != 0) {
+                int remainder = fileContent.length % 16;
+                // need to pad with remainder
+                byte[] padded = new byte[fileContent.length + remainder];
+                for (int i=0; i< fileContent.length; i++) {
+                    padded[i] = fileContent[i];
+                }
+                for (int i= fileContent.length; i< padded.length; i++) {
+                    padded[i] = (byte) remainder;
+                }
+                fileContent = padded;
             }
-            saveFile(encrypted);
+            int[] unsignedContent = new int[fileContent.length];
+            for (int i=0; i< fileContent.length; i++) {
+                unsignedContent[i] = fileContent[i] & 0xff;
+            }
+            return unsignedContent;
         } catch (Exception e) {
             System.out.println(e);
+            return null;
         }
     }
 
