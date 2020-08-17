@@ -6,16 +6,10 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.io.*;
 import java.security.Key;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
-import java.util.Arrays;
 
 public class Encryptor extends JFrame{
     private String filename, dir;
@@ -207,7 +201,7 @@ public class Encryptor extends JFrame{
             if (dialog == JFileChooser.APPROVE_OPTION) {
                 filename = c.getSelectedFile().getName();
                 dir = c.getCurrentDirectory().toString();
-                convertFile(Paths.get(dir + "/" + filename));
+                //convertFile(Paths.get(dir + "/" + filename));
             }
             if (dialog == JFileChooser.CANCEL_OPTION) {
                 filename = "You pressed cancel";
@@ -315,7 +309,6 @@ public class Encryptor extends JFrame{
     }
 
     private static int[] encryptFile(int[] fileContent, int[] key) {
-        System.out.println("---------ENCRYPTION---------");
         int[] test = {
                 0x04,
                 0x66,
@@ -347,12 +340,8 @@ public class Encryptor extends JFrame{
                     round_key[j][i] = key[key_index++];
                 }
             }
-            System.out.print("Round key:    ");
-            printBlock(round_key);
             // add round key
             encrypted = addRoundKey(data, round_key);
-            System.out.print("Add Initial Round Key:    ");
-            printBlock(encrypted);
 
             for (int round=0;round< 14; round++) {
                 // 14 rounds for 256-bit key
@@ -362,16 +351,10 @@ public class Encryptor extends JFrame{
                         encrypted[j][i] = subByte(encrypted[j][i]);
                     }
                 }
-                System.out.print("S Box:    ");
-                printBlock(encrypted);
                 encrypted = shiftRowsLeft(encrypted);
-                System.out.print("Shift Rows:   ");
-                printBlock(encrypted);
                 if (round != 13) {
                     // no mix columns on final round
                     encrypted = mixColumns(encrypted);
-                    System.out.print("Mix Columns:  ");
-                    printBlock(encrypted);
                 }
                 // get next round key
                 for (int i = 0; i < 4; i++) {
@@ -380,8 +363,6 @@ public class Encryptor extends JFrame{
                     }
                 }
                 encrypted = addRoundKey(encrypted, round_key);
-                System.out.print("Add Round Key:    ");
-                printBlock(encrypted);
             }
             // convert to linear array
             for (int i=0; i< 4; i++) {
@@ -390,8 +371,6 @@ public class Encryptor extends JFrame{
                 }
             }
         }
-        System.out.print("Encrypted Data:   ");
-        printArray(encrypted_data);
         return encrypted_data;
     }
 
@@ -425,7 +404,6 @@ public class Encryptor extends JFrame{
 
     // Decrypt file using key
     private static int[] decryptFile(int[] input, int[] key) {
-        System.out.println("-------DECRYPTION-----------");
         // encrypt in reverse
         int index = input.length - 1;
         int[] decrypted_data = new int[input.length];
@@ -441,8 +419,6 @@ public class Encryptor extends JFrame{
                     data[j][i] = input[index--];
                 }
             }
-            System.out.print("Data: ");
-            printBlock(data);
             decrypted = data;
             if (index >= 15) {
                 // get previous block
@@ -470,24 +446,15 @@ public class Encryptor extends JFrame{
                     }
                 }
 
-                System.out.print("Key Schedule:   ");
-                printBlock(round_key);
-
-                System.out.print("Add Last Round Key:    ");
                 decrypted = addRoundKey(decrypted, round_key);
-                printBlock(decrypted);
 
                 // mix columns if not first round
                 if (round != 0) {
                     decrypted = mixColumnsInverse(decrypted);
-                    System.out.print("Inverse Mix Columns:    ");
-                    printBlock(decrypted);
                 }
 
                 // rotate right
                 decrypted = shiftRowsRight(decrypted);
-                System.out.print("Inverse Shift Rows:    ");
-                printBlock(decrypted);
 
                 // sub byte inverse
                 for (int i = 0; i < 4; i++) {
@@ -495,8 +462,6 @@ public class Encryptor extends JFrame{
                         decrypted[j][i] = subInverse(decrypted[j][i]);
                     }
                 }
-                System.out.print("Inverse S Box:    ");
-                printBlock(decrypted);
 
 
             }
@@ -511,8 +476,6 @@ public class Encryptor extends JFrame{
                 }
             }
             decrypted = addRoundKey(decrypted, round_key);
-            System.out.print("Add Last Round Key:    ");
-            printBlock(decrypted);
 
             // convert to linear array
             for (int i=3; i>= 0; i--) {
@@ -520,8 +483,6 @@ public class Encryptor extends JFrame{
                     decrypted_data[decrypted_index--] = decrypted[j][i];
                 }
             }
-            System.out.print("Decrypted data:   ");
-            printArray(decrypted_data);
         }
         return decrypted_data;
     }
@@ -550,77 +511,77 @@ public class Encryptor extends JFrame{
 
     public static void main(String[] args) {
         //new Encryptor();
-        File file = new File("/Users/davidson/Documents/testFile.txt");
-        int[] test_key = {
-                0x00,
-                0x01,
-                0x02,
-                0x03,
-                0x04,
-                0x05,
-                0x06,
-                0x07,
-                0x08,
-                0x09,
-                0x0a,
-                0x0b,
-                0x0c,
-                0x0d,
-                0x0e,
-                0x0f,
-                0x10,
-                0x11,
-                0x12,
-                0x13,
-                0x14,
-                0x15,
-                0x16,
-                0x17,
-                0x18,
-                0x19,
-                0x1a,
-                0x1b,
-                0x1c,
-                0x1d,
-                0x1e,
-                0x1f
-        };
+        File file = new File("/Users/davidson/Pictures/Me/intern_pic.jpg");
         int[] key = generate_AES_key();
         int[] expanded_key = expand_AES_key(key);
-        int[] fileContent = convertFile(file.toPath());
-        printArray(fileContent);
+        int[] fileContent = packFile(file);
         int[] encrypted = encryptFile(fileContent, expanded_key);
-
-
-        System.out.println();
-        int[] decrypted = decryptFile(encrypted, expanded_key);
-        byte[] content = new byte[decrypted.length];
-        for (int i=0; i< decrypted.length; i++) {
-            content[i] = (byte) decrypted[i];
+        byte[] content = new byte[encrypted.length];
+        for (int i=0; i< encrypted.length; i++) {
+            content[i] = (byte) encrypted[i];
         }
-        System.out.println(new String(content));
+        int[] decrypted = decryptFile(encrypted, expanded_key);
+        byte[] dcontent = new byte[decrypted.length];
+        for (int i=0; i< decrypted.length; i++) {
+            dcontent[i] = (byte) decrypted[i];
+        }
+        byte[] filename = new byte[16];
+        // get filename and extension
+        int filename_len = 0;
+        for (int i=0; i< 16; i++) {
+            filename[i] = dcontent[i];
+            if (dcontent[i] != 0) {
+                filename_len++;
+            }
+        }
+        filename = new byte[filename_len];
+        for (int i=0; i< filename.length; i++) {
+            filename[i] = dcontent[i];
+        }
+        byte[] fileContents = new byte[dcontent.length - 16];
+        // get filename and extension
+        for (int i=0; i< fileContents.length; i++) {
+            fileContents[i] = dcontent[i + 16];
+        }
+        fileContents = unpackFile(fileContents);
+        saveFile(fileContents, filename);
     }
 
     // -----File helper methods------
 
-    public static int[] convertFile(Path pathName) {
+    private static int[] packFile(File file) {
         try {
-            byte[] fileContent = Files.readAllBytes(pathName);
-            if (fileContent.length % 16 != 0) {
-                int remainder = (16 - fileContent.length % 16);
-                // need to pad with remainder
-                byte[] padded = new byte[fileContent.length + remainder];
-                for (int i=0; i< fileContent.length; i++) {
-                    padded[i] = fileContent[i];
+            FileInputStream fis = new FileInputStream(file);
+            byte[] fileContent = new byte[(int) file.length()];
+            fis.read(fileContent, 0, fileContent.length);
+            fis.close();
+            byte[] filename = file.getName().getBytes();
+            saveFile(fileContent, filename);
+            byte[] fullContent = new byte[fileContent.length + 16];
+            for (int i=0; i<16; i++) {
+                if (i < filename.length) {
+                    fullContent[i] = filename[i];
+                } else {
+                    fullContent[i] = 0;
                 }
-                for (int i= fileContent.length; i< padded.length; i++) {
-                    padded[i] = (byte) remainder;
-                }
-                fileContent = padded;
+
             }
-            int[] unsignedContent = new int[fileContent.length];
             for (int i=0; i< fileContent.length; i++) {
-                unsignedContent[i] = fileContent[i] & 0xff;
+                fullContent[i + 16] = fileContent[i];
+            }
+            int remainder = (16 - fullContent.length % 16);
+            // need to pad with remainder
+            byte[] padded = new byte[fullContent.length + remainder];
+            for (int i=0; i< fullContent.length; i++) {
+                padded[i] = fullContent[i];
+            }
+            for (int i= fullContent.length; i< padded.length; i++) {
+                padded[i] = (byte) remainder;
+            }
+            fullContent = padded;
+            int[] unsignedContent = new int[fullContent.length];
+            for (int i=0; i< fullContent.length; i++) {
+                unsignedContent[i] = fullContent[i] & 0xff;
             }
             return unsignedContent;
         } catch (Exception e) {
@@ -629,11 +590,23 @@ public class Encryptor extends JFrame{
         }
     }
 
-    public static void saveFile(byte[] encrypted) {
+    private static byte[] unpackFile(byte[] fileContent) {
+        int remainder = fileContent[fileContent.length - 1];
+        byte[] contents = new byte[fileContent.length-remainder];
+        for (int i=0; i< fileContent.length-remainder;i++) {
+            contents[i] = fileContent[i];
+        }
+        //System.out.println(contents.length);
+        return contents;
+    }
+
+    private static void saveFile(byte[] encrypted, byte[] filename) {
         try {
-            FileWriter fileWriter = new FileWriter("/Users/davidson/Documents/encryptedTestFile.txt");
-            fileWriter.write(new String(encrypted));
-            fileWriter.close();
+            String string_file = new String(filename);
+            File file = new File("/Users/davidson/Desktop/" + string_file);
+            FileOutputStream fos = new FileOutputStream(file);
+            fos.write(encrypted);
+            fos.close();
         } catch (IOException e) {
             System.out.println("Error");
         }
