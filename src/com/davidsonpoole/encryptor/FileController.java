@@ -66,14 +66,10 @@ public class FileController {
         return contents;
     }
 
-    public void saveDecryptedFile(byte[] decrypted) {
+    public void saveDecryptedFile(byte[] decrypted, File file) {
         try {
             byte[] content = unpackFile(decrypted);
-            String filename = new String(getFilename(content));
             content = getFileContent(content);
-            File dir = new File("/Users/davidson/Test/decrypted_files");
-            dir.mkdir();
-            File file = new File("/Users/davidson/Test/decrypted_files/" + filename);
             FileOutputStream fos = new FileOutputStream(file);
             fos.write(content);
             fos.close();

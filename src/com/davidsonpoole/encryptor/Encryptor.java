@@ -328,7 +328,7 @@ public class Encryptor {
         if (encrypted) {
             fc.saveEncryptedFile(encryptedData, file);
         } else {
-            fc.saveDecryptedFile(decryptedData);
+            fc.saveDecryptedFile(decryptedData, file);
         }
     }
 
