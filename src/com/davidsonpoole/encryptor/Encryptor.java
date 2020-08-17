@@ -1,6 +1,7 @@
 package com.davidsonpoole.encryptor;
 
 import javax.swing.*;
+import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -16,6 +17,7 @@ public class Encryptor {
     int[] keyData;
     byte[] encryptedData;
     byte[] decryptedData;
+    String filename;
 
     public Encryptor() {
         loadHome();
@@ -79,6 +81,9 @@ public class Encryptor {
         browseKeyFile.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 JFileChooser c = new JFileChooser();
+                c.setAcceptAllFileFilterUsed(false);
+                c.addChoosableFileFilter(new FileNameExtensionFilter(
+                        "Key File", "key"));
                 int dialog = c.showOpenDialog(frame);
                 if (dialog == JFileChooser.APPROVE_OPTION) {
                     key = c.getSelectedFile();
@@ -125,6 +130,9 @@ public class Encryptor {
         browseFile.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 JFileChooser c = new JFileChooser();
+                c.setAcceptAllFileFilterUsed(false);
+                c.addChoosableFileFilter(new FileNameExtensionFilter(
+                        "Encrypted File", "encrypted"));
                 int dialog = c.showOpenDialog(frame);
                 if (dialog == JFileChooser.APPROVE_OPTION) {
                     file = c.getSelectedFile();
@@ -144,6 +152,9 @@ public class Encryptor {
         browseKeyFile.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 JFileChooser c = new JFileChooser();
+                c.setAcceptAllFileFilterUsed(false);
+                c.addChoosableFileFilter(new FileNameExtensionFilter(
+                        "Key File", "key"));
                 int dialog = c.showOpenDialog(frame);
                 if (dialog == JFileChooser.APPROVE_OPTION) {
                     key = c.getSelectedFile();
@@ -191,12 +202,12 @@ public class Encryptor {
         JButton downloadFileButton = (encrypted) ?
                 new JButton("Download Encrypted File") :
                 new JButton("Download Decrypted File");
-        downloadFileButton.addActionListener(e -> downloadFile(file.getName()));
+        downloadFileButton.addActionListener(new SaveFileListener());
         p.add(downloadFileButton);
 
         if (encrypted) {
             JButton downloadKeyButton = new JButton("Download Key");
-            downloadKeyButton.addActionListener(e -> downloadKey(file.getName()));
+            downloadKeyButton.addActionListener(new SaveKeyListener());
             p.add(downloadKeyButton);
         }
         frame.add(p);
@@ -204,6 +215,42 @@ public class Encryptor {
 
         frame.revalidate();
         frame.repaint();
+    }
+
+    public class SaveFileListener implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
+            JFileChooser c = new JFileChooser();
+            if (encrypted) {
+                c.setAcceptAllFileFilterUsed(false);
+                c.addChoosableFileFilter(new FileNameExtensionFilter(
+                        "Encrypted File", "encrypted"));
+            } else {
+                FileController fc = new FileController();
+                filename = new String(fc.getFilename(decryptedData));
+                c.setSelectedFile(new File(filename));
+            }
+            c.setDialogTitle("Choose a location to save");
+            int selection = c.showSaveDialog(frame);
+            if (selection == JFileChooser.APPROVE_OPTION) {
+                File fileToSave = c.getSelectedFile();
+                downloadFile(fileToSave);
+            }
+        }
+    }
+
+    public class SaveKeyListener implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
+            JFileChooser c = new JFileChooser();
+            c.setAcceptAllFileFilterUsed(false);
+            c.addChoosableFileFilter(new FileNameExtensionFilter(
+                    "Key File", "key"));
+            c.setDialogTitle("Choose a location to save");
+            int selection = c.showSaveDialog(frame);
+            if (selection == JFileChooser.APPROVE_OPTION) {
+                File KeyToSave = c.getSelectedFile();
+                downloadKey(KeyToSave);
+            }
+        }
     }
 
     public class EncryptListener implements ActionListener {
@@ -276,18 +323,18 @@ public class Encryptor {
         decryptedData = aes.toByteArray(decrypted);
     }
 
-    public void downloadFile(String filename) {
+    public void downloadFile(File file) {
         FileController fc = new FileController();
         if (encrypted) {
-            fc.saveEncryptedFile(encryptedData, filename);
+            fc.saveEncryptedFile(encryptedData, file);
         } else {
             fc.saveDecryptedFile(decryptedData);
         }
     }
 
-    public void downloadKey(String filename) {
+    public void downloadKey(File file) {
         FileController fc = new FileController();
-        fc.saveKey(keyData, filename);
+        fc.saveKey(keyData, file);
     }
 
     public static void main(String[] args) {

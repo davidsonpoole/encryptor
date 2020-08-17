@@ -83,15 +83,11 @@ public class FileController {
 
     }
 
-    public void saveEncryptedFile(byte[] encrypted, String filename) {
+    public void saveEncryptedFile(byte[] encrypted, File file) {
         // eventually will implement custom filepath
         try {
-            String[] tokens = filename.split("\\.(?=[^\\.]+$)");
-            String base = tokens[0];
-            File dir = new File("/Users/davidson/Test/encrypted_files");
-            dir.mkdir();
-            File file = new File("/Users/davidson/Test/encrypted_files/" + base + ".encrypted");
-            FileOutputStream fos = new FileOutputStream(file);
+            File fileToSave = new File(file.getPath() + ".encrypted");
+            FileOutputStream fos = new FileOutputStream(fileToSave);
             fos.write(encrypted);
             fos.close();
         } catch (IOException e) {
@@ -100,15 +96,11 @@ public class FileController {
 
     }
 
-    public void saveKey(int[] content, String filename) {
+    public void saveKey(int[] content, File file) {
         // eventually will implement custom filepath
         try {
-            String[] tokens = filename.split("\\.(?=[^\\.]+$)");
-            String base = tokens[0];
-            File dir = new File("/Users/davidson/Test/keys");
-            dir.mkdir();
-            File file = new File("/Users/davidson/Test/keys/" + base + ".key");
-            FileOutputStream fos = new FileOutputStream(file);
+            File keyToSave = new File(file.getPath() + ".key");
+            FileOutputStream fos = new FileOutputStream(keyToSave);
             fos.write(toByteArray(content));
             fos.close();
         } catch (IOException e) {
