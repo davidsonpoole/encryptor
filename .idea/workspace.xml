@@ -5,6 +5,9 @@
       <artifact name="encryptor:jar" />
     </artifacts-to-build>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -108,13 +111,16 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="build.tools" />
   </component>
-  <component name="RunManager" selected="Application.Encryptor">
-    <configuration name="Encryptor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JAR Application.EncryptorJar">
+    <configuration name="Encryptor" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="/Library/Java/JavaVirtualMachines/jdk-12.0.2.jdk/Contents/Home" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.davidsonpoole.encryptor.Encryptor" />
       <module name="encryptor" />
       <extension name="coverage">
@@ -141,7 +147,7 @@
     <configuration name="EncryptorJar" type="JarApplication">
       <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/encryptor_jar/encryptor.jar" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ALTERNATIVE_JRE_PATH" value="12" />
       <method v="2">
         <option name="BuildArtifacts" enabled="true">
           <artifact name="encryptor:jar" />
@@ -152,11 +158,6 @@
       <item itemvalue="Application.Encryptor" />
       <item itemvalue="JAR Application.EncryptorJar" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Encryptor" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -166,7 +167,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596903458811</updated>
-      <workItem from="1596903461002" duration="79316000" />
+      <workItem from="1596903461002" duration="81309000" />
     </task>
     <servers />
   </component>
@@ -197,10 +198,10 @@
       <screen x="0" y="23" width="1280" height="707" />
     </state>
     <state x="478" y="238" key="#com.intellij.debugger.actions.ViewTextAction/0.23.1280.707@0.23.1280.707" timestamp="1597256490075" />
-    <state x="104" y="31" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596903591767">
+    <state x="104" y="23" width="1071" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597709528839">
       <screen x="0" y="23" width="1280" height="708" />
     </state>
-    <state x="104" y="31" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.708@0.23.1280.708" timestamp="1596903591767" />
+    <state x="104" y="23" width="1071" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.708@0.23.1280.708" timestamp="1597709528839" />
     <state x="453" y="90" key="#com.intellij.ide.util.MemberChooser" timestamp="1597700038569">
       <screen x="0" y="23" width="1280" height="710" />
     </state>
@@ -218,32 +219,32 @@
     </state>
     <state x="39" y="115" key="#xdebugger.evaluate/0.23.1280.707@0.23.1280.707" timestamp="1597243107924" />
     <state x="39" y="440" width="474" height="254" key="#xdebugger.evaluate/0.23.1280.708@0.23.1280.708" timestamp="1597597725569" />
-    <state width="1218" height="161" key="GridCell.Tab.0.bottom" timestamp="1597704153840">
+    <state width="1218" height="161" key="GridCell.Tab.0.bottom" timestamp="1597709530523">
       <screen x="0" y="23" width="1280" height="708" />
     </state>
     <state width="1218" height="217" key="GridCell.Tab.0.bottom/0.23.1280.707@0.23.1280.707" timestamp="1597258992852" />
-    <state width="1218" height="161" key="GridCell.Tab.0.bottom/0.23.1280.708@0.23.1280.708" timestamp="1597704153840" />
+    <state width="1218" height="161" key="GridCell.Tab.0.bottom/0.23.1280.708@0.23.1280.708" timestamp="1597709530523" />
     <state width="1218" height="161" key="GridCell.Tab.0.bottom/0.23.1280.710@0.23.1280.710" timestamp="1597701555029" />
     <state width="1218" height="161" key="GridCell.Tab.0.bottom/0.23.1280.713@0.23.1280.713" timestamp="1597697128293" />
-    <state width="1218" height="161" key="GridCell.Tab.0.center" timestamp="1597704153839">
+    <state width="1218" height="161" key="GridCell.Tab.0.center" timestamp="1597709530523">
       <screen x="0" y="23" width="1280" height="708" />
     </state>
     <state width="1218" height="217" key="GridCell.Tab.0.center/0.23.1280.707@0.23.1280.707" timestamp="1597258992851" />
-    <state width="1218" height="161" key="GridCell.Tab.0.center/0.23.1280.708@0.23.1280.708" timestamp="1597704153839" />
+    <state width="1218" height="161" key="GridCell.Tab.0.center/0.23.1280.708@0.23.1280.708" timestamp="1597709530523" />
     <state width="1218" height="161" key="GridCell.Tab.0.center/0.23.1280.710@0.23.1280.710" timestamp="1597701555028" />
     <state width="1218" height="161" key="GridCell.Tab.0.center/0.23.1280.713@0.23.1280.713" timestamp="1597697128292" />
-    <state width="1218" height="161" key="GridCell.Tab.0.left" timestamp="1597704153839">
+    <state width="1218" height="161" key="GridCell.Tab.0.left" timestamp="1597709530522">
       <screen x="0" y="23" width="1280" height="708" />
     </state>
     <state width="1218" height="217" key="GridCell.Tab.0.left/0.23.1280.707@0.23.1280.707" timestamp="1597258992851" />
-    <state width="1218" height="161" key="GridCell.Tab.0.left/0.23.1280.708@0.23.1280.708" timestamp="1597704153839" />
+    <state width="1218" height="161" key="GridCell.Tab.0.left/0.23.1280.708@0.23.1280.708" timestamp="1597709530522" />
     <state width="1218" height="161" key="GridCell.Tab.0.left/0.23.1280.710@0.23.1280.710" timestamp="1597701555028" />
     <state width="1218" height="161" key="GridCell.Tab.0.left/0.23.1280.713@0.23.1280.713" timestamp="1597697128292" />
-    <state width="1218" height="161" key="GridCell.Tab.0.right" timestamp="1597704153840">
+    <state width="1218" height="161" key="GridCell.Tab.0.right" timestamp="1597709530523">
       <screen x="0" y="23" width="1280" height="708" />
     </state>
     <state width="1218" height="217" key="GridCell.Tab.0.right/0.23.1280.707@0.23.1280.707" timestamp="1597258992851" />
-    <state width="1218" height="161" key="GridCell.Tab.0.right/0.23.1280.708@0.23.1280.708" timestamp="1597704153840" />
+    <state width="1218" height="161" key="GridCell.Tab.0.right/0.23.1280.708@0.23.1280.708" timestamp="1597709530523" />
     <state width="1218" height="161" key="GridCell.Tab.0.right/0.23.1280.710@0.23.1280.710" timestamp="1597701555029" />
     <state width="1218" height="161" key="GridCell.Tab.0.right/0.23.1280.713@0.23.1280.713" timestamp="1597697128292" />
     <state width="1218" height="176" key="GridCell.Tab.1.bottom" timestamp="1597696866709">
@@ -274,10 +275,10 @@
     <state width="1218" height="176" key="GridCell.Tab.1.right/0.23.1280.708@0.23.1280.708" timestamp="1597690183408" />
     <state width="1218" height="176" key="GridCell.Tab.1.right/0.23.1280.710@0.23.1280.710" timestamp="1597696866709" />
     <state width="1218" height="176" key="GridCell.Tab.1.right/0.23.1280.713@0.23.1280.713" timestamp="1597696827828" />
-    <state x="128" y="23" key="SettingsEditor" timestamp="1596903543311">
+    <state x="128" y="23" key="SettingsEditor" timestamp="1597709729450">
       <screen x="0" y="23" width="1280" height="708" />
     </state>
-    <state x="128" y="23" key="SettingsEditor/0.23.1280.708@0.23.1280.708" timestamp="1596903543311" />
+    <state x="128" y="23" key="SettingsEditor/0.23.1280.708@0.23.1280.708" timestamp="1597709729450" />
     <state x="135" y="113" width="1009" height="617" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1597444590512">
       <screen x="0" y="23" width="1280" height="708" />
     </state>

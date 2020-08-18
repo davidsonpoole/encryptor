@@ -56,7 +56,7 @@ public class Encryptor {
         frame.add(p);
 
         p = new JPanel();
-        JLabel fileLabel = new JLabel("Pick a file to encrypt: ");
+        JLabel fileLabel = new JLabel("Choose a file to encrypt: ");
         JButton browseFile = new JButton("Browse");
         JLabel chosenFile = new JLabel();
         browseFile.addActionListener(new ActionListener() {
@@ -75,7 +75,7 @@ public class Encryptor {
         frame.add(p);
 
         p = new JPanel();
-        JLabel keyFile = new JLabel("Pick an optional key file: ");
+        JLabel keyFile = new JLabel("Choose a key file (Optional): ");
         JButton browseKeyFile = new JButton("Browse");
         JLabel chosenKey = new JLabel();
         browseKeyFile.addActionListener(new ActionListener() {
@@ -124,7 +124,7 @@ public class Encryptor {
         frame.add(p);
 
         p = new JPanel();
-        JLabel fileLabel = new JLabel("Pick a file to decrypt: ");
+        JLabel fileLabel = new JLabel("Choose a file to decrypt: ");
         JButton browseFile = new JButton("Browse");
         JLabel chosenFile = new JLabel();
         browseFile.addActionListener(new ActionListener() {
@@ -146,7 +146,7 @@ public class Encryptor {
         frame.add(p);
 
         p = new JPanel();
-        JLabel keyFile = new JLabel("Pick an key file (Required): ");
+        JLabel keyFile = new JLabel("Choose a key file (Required): ");
         JButton browseKeyFile = new JButton("Browse");
         JLabel chosenKey = new JLabel();
         browseKeyFile.addActionListener(new ActionListener() {
