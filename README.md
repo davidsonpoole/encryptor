@@ -33,4 +33,4 @@ A 256-bit AES encryptor written in Java with GUI built using the Swing framework
 
 ## Acknowledgments
 - Huge thanks to https://www.samiam.org/ for explaining the AES key-scheduling and mix-columns algorithms in depth. Wikipedia was helpful but this project would have taken countless more hours without this man's help.
-- https://www.ej-technologies.com/products/install4j/overview.html helped me package the JRE into the executable files for Windows and MacOS.
+- [Install4J](https://www.ej-technologies.com/products/install4j/overview.html) helped me package the JRE into the executable files for Windows and MacOS.
