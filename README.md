@@ -7,9 +7,9 @@ A 256-bit AES encryptor written in Java with GUI built using the Swing framework
 - Encrypting multiple files is currently not supported. However, you can encrypt a zip folder of these files.
 
 ## Downloads
-##### Windows (64-bit): https://drive.google.com/file/d/1oVnxNR4wbf5P1Oefwabd3ESUKqcR428r/view?usp=sharing
-##### MacOS (64-bit): https://drive.google.com/file/d/16tgmFKH6pXol4cKkZ-cJSbUHSXIkgDE2/view?usp=sharing
-##### .jar File: https://drive.google.com/file/d/1TIgL36bJKcpt5GTw-lQ92yurwUEfgwVO/view?usp=sharing
+##### Windows (64-bit): https://drive.google.com/file/d/1NGBbJ_xrZtUzfAvYQo7U7xp4ujKDF9hm/view?usp=sharing
+##### MacOS (64-bit): https://drive.google.com/file/d/1wlpy8lLM1rmtC4JJH0Bl4mvnOXxKdLTb/view?usp=sharing
+##### .jar File: https://drive.google.com/file/d/1rC_ZgJIxhSAwH8spKfzvDFYEir_dQzcp/view?usp=sharing
 
 ## Installation
 ##### Windows
