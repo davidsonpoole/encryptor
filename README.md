@@ -1,6 +1,7 @@
 # Davidson's AES Encryptor
 ### Description
-A simple GUI encryptor written in Java. You can encrypt files with a key, encrypt files without a key, and decrypt encrypted files.
+A 256-bit AES encryptor written in Java with GUI built using the Spring framework. You can encrypt and decrypt files up to 150MB.
+
 ### File Formats
 - Encrypted files have a `.encrypted` extension, and key files have a `.key` extension.
 - Encrypting multiple files is currently not supported. However, you can encrypt a zip folder of these files.
