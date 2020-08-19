@@ -26,7 +26,7 @@ A 256-bit AES encryptor written in Java with GUI built using the Spring framewor
 6. Run the newly created file.
 
 ##### JAR File
-1. Alternatively, you can run the .jar file directly if you have Java 14.0 installed. [Download Java](https://www.oracle.com/java/technologies/javase-jdk14-downloads.html)
+1. Alternatively, you can run the .jar file directly if you have Java 14.0 installed. [[Download Java]](https://www.oracle.com/java/technologies/javase-jdk14-downloads.html)
 2. Download encryptor-1.0.jar from the link above.
 3. Open your Terminal and navigate to the directory of the .jar file.
 4. Run `java -jar encryptor-1.0.jar`.
