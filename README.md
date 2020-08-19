@@ -1,17 +1,17 @@
 # Davidson's AES Encryptor
-### Description
+## Description
 A 256-bit AES encryptor written in Java with GUI built using the Spring framework. You can encrypt and decrypt files up to 150MB.
 
-### File Formats
+## File Formats
 - Encrypted files have a `.encrypted` extension, and key files have a `.key` extension.
 - Encrypting multiple files is currently not supported. However, you can encrypt a zip folder of these files.
 
-### Downloads
+## Downloads
 ##### Windows (64-bit): https://drive.google.com/file/d/1oVnxNR4wbf5P1Oefwabd3ESUKqcR428r/view?usp=sharing
 ##### MacOS (64-bit): https://drive.google.com/file/d/16tgmFKH6pXol4cKkZ-cJSbUHSXIkgDE2/view?usp=sharing
 ##### .jar File: https://drive.google.com/file/d/1TIgL36bJKcpt5GTw-lQ92yurwUEfgwVO/view?usp=sharing
 
-### Installation
+## Installation
 ##### Windows
 1. Double-click the encryptor_windows-x64_1_0.exe file.
 2. Proceed through the installer.
