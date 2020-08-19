@@ -1,11 +1,22 @@
 package com.davidsonpoole.encryptor;
 
 import javax.crypto.KeyGenerator;
+import javax.swing.event.SwingPropertyChangeSupport;
+import java.beans.PropertyChangeListener;
 import java.security.Key;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 
 public class AESEncryptor {
+    // for progress check
+    private int index;
+    private int totalBytes;
+
+    private boolean encrypting;
+
+    private SwingPropertyChangeSupport pcSupport = new SwingPropertyChangeSupport(this);
+    public static final String INDEX = "index";
+
     // Lookup tables
     private int[] sbox =  {
             0x63 ,0x7c ,0x77 ,0x7b ,0xf2 ,0x6b ,0x6f ,0xc5 ,0x30 ,0x01 ,0x67 ,0x2b ,0xfe ,0xd7 ,0xab ,0x76
@@ -220,18 +231,15 @@ public class AESEncryptor {
 
     // Encrypt file using key
     public int[] encryptFile(int[] fileContent, int[] key) {
-        int[] test = {
-                0x04,
-                0x66,
-                0x81,
-                0xe5
-        };
-        int index = 0;
-        int[] encrypted_data = new int[fileContent.length];
+        totalBytes = fileContent.length;
+        encrypting = true;
+        index = 0;
+        int[] encrypted_data = new int[totalBytes];
         int[][] encrypted = null;
         int encrypted_index = 0;
-
-        while (index < fileContent.length) {
+        int oldIndex; // for property change
+        while (index < totalBytes) {
+            oldIndex = index;
             // split into 16-byte blocks
             int[][] data = new int[4][4];
             for (int i=0; i< 4; i++) {
@@ -281,19 +289,23 @@ public class AESEncryptor {
                     encrypted_data[encrypted_index++] = encrypted[j][i];
                 }
             }
+            pcSupport.firePropertyChange(INDEX, oldIndex, index);
         }
+        encrypting = false;
         return encrypted_data;
     }
 
     // Decrypt file using key
     public int[] decryptFile(int[] input, int[] key) {
+        totalBytes = input.length;
         // encrypt in reverse
-        int index = input.length - 1;
-        int[] decrypted_data = new int[input.length];
-        int decrypted_index = input.length - 1;
-        int[][] prev_block = null;
-
+        index = totalBytes - 1;
+        int[] decrypted_data = new int[totalBytes];
+        int decrypted_index = totalBytes - 1;
+        int[][] prev_block;
+        int oldIndex; // for property listener
         while (index >= 15) {
+            oldIndex = index;
             int[][] decrypted = new int[4][4];
             // split into 16-byte blocks
             int[][] data = new int[4][4];
@@ -366,8 +378,13 @@ public class AESEncryptor {
                     decrypted_data[decrypted_index--] = decrypted[j][i];
                 }
             }
+            pcSupport.firePropertyChange(INDEX, oldIndex, index);
         }
         return decrypted_data;
+    }
+
+    public void addPropertyChangeListener(String name, PropertyChangeListener listener) {
+        pcSupport.addPropertyChangeListener(name, listener);
     }
 
     public byte[] toByteArray(int[] input) {
@@ -376,6 +393,18 @@ public class AESEncryptor {
             result[i] = (byte) input[i];
         }
         return result;
+    }
+
+    public int getCurrentBytes() {
+        if (encrypting) {
+            return index + 1;
+        } else {
+            return totalBytes - index;
+        }
+    }
+
+    public int getTotalBytes() {
+        return totalBytes;
     }
 
     // --------Helper methods--------------
