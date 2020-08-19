@@ -1,6 +1,6 @@
 # Davidson's AES Encryptor
 ## Description
-A 256-bit AES encryptor written in Java with GUI built using the Spring framework. You can encrypt and decrypt files up to 150MB.
+A 256-bit AES encryptor written in Java with GUI built using the Swing framework. You can encrypt and decrypt files up to 150MB.
 
 ## File Formats
 - Encrypted files have a `.encrypted` extension, and key files have a `.key` extension.
@@ -30,3 +30,7 @@ A 256-bit AES encryptor written in Java with GUI built using the Spring framewor
 2. Download encryptor-1.0.jar from the link above.
 3. Open your Terminal and navigate to the directory of the .jar file.
 4. Run `java -jar encryptor-1.0.jar`.
+
+## Acknowledgments
+- Huge thanks to https://www.samiam.org/ for explaining the AES key-scheduling and mix-columns algorithms in depth. Wikipedia was helpful but this project would have taken countless more hours without this man's help.
+- https://www.ej-technologies.com/products/install4j/overview.html helped me package the JRE into the executable files for Windows and MacOS.
