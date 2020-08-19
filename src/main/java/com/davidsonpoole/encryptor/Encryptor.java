@@ -35,7 +35,6 @@ public class Encryptor {
         frame.add(p, BorderLayout.SOUTH);
 
         p = new JPanel();
-        p.setLayout(new GridLayout(2, 1));
         JLabel title = new JLabel("Welcome to Davidson's Encryptor!");
         p.add(title);
         frame.add(p, BorderLayout.NORTH);

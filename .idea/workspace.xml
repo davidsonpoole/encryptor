@@ -19,9 +19,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1776b89-b02f-4b5e-9ec8-3c3811262259" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/davidsonpoole/encryptor/AESEncryptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/davidsonpoole/encryptor/FileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HELP.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../encryptor /.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../encryptor /.idea/artifacts/encryptor_jar.xml" beforeDir="false" />
@@ -56,21 +54,26 @@
       <change beforePath="$PROJECT_DIR$/../encryptor copy/src/com/davidson/poole/encryptor/Encryptor.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../encryptor copy/src/com/davidson/poole/encryptor/FileChooserTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../encryptor.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/encryptor.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/encryptor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/encryptor.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/encryptor_jar/encryptor.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/encryptor_jar/encryptor.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/encryptor/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/encryptor/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/encryptor/com/davidson/poole/encryptor/Encryptor$OpenL.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/encryptor/com/davidson/poole/encryptor/Encryptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/encryptor/com/davidson/poole/encryptor/FileChooserTest$OpenL.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/encryptor/com/davidson/poole/encryptor/FileChooserTest$SaveL.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/encryptor/com/davidson/poole/encryptor/FileChooserTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/davidson/poole/encryptor/Encryptor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/davidson/poole/encryptor/FileChooserTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/davidsonpoole/encryptor/Encryptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/davidsonpoole/encryptor/Encryptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/encryptor/com/davidsonpoole/encryptor/AESEncryptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/encryptor/com/davidsonpoole/encryptor/Encryptor$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/encryptor/com/davidsonpoole/encryptor/Encryptor$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/encryptor/com/davidsonpoole/encryptor/Encryptor$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/encryptor/com/davidsonpoole/encryptor/Encryptor$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/encryptor/com/davidsonpoole/encryptor/Encryptor$DecryptListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/encryptor/com/davidsonpoole/encryptor/Encryptor$EncryptListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/encryptor/com/davidsonpoole/encryptor/Encryptor$SaveFileListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/encryptor/com/davidsonpoole/encryptor/Encryptor$SaveKeyListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/encryptor/com/davidsonpoole/encryptor/Encryptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/encryptor/com/davidsonpoole/encryptor/FileController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/davidsonpoole/encryptor/AESEncryptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/davidsonpoole/encryptor/Encryptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/davidsonpoole/encryptor/FileController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../mvnw" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../mvnw.cmd" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" />
@@ -91,7 +94,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -111,16 +114,24 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="build.tools" />
   </component>
-  <component name="RunManager" selected="JAR Application.EncryptorJar">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/META-INF" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/META-INF" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Encryptor">
     <configuration name="Encryptor" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="/Library/Java/JavaVirtualMachines/jdk-12.0.2.jdk/Contents/Home" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.davidsonpoole.encryptor.Encryptor" />
       <module name="encryptor" />
       <extension name="coverage">
@@ -145,7 +156,7 @@
       </method>
     </configuration>
     <configuration name="EncryptorJar" type="JarApplication">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/encryptor_jar/encryptor.jar" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/encryptor-1.0.jar" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH" value="12" />
       <method v="2">
@@ -167,7 +178,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596903458811</updated>
-      <workItem from="1596903461002" duration="81309000" />
+      <workItem from="1596903461002" duration="84697000" />
+      <workItem from="1597790047282" duration="601000" />
+      <workItem from="1597793157843" duration="2006000" />
     </task>
     <servers />
   </component>
@@ -184,6 +197,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="427" y="193" key="#BuildArtifactsBeforeRunChooser" timestamp="1596903590818">
@@ -194,14 +208,24 @@
       <screen x="0" y="23" width="1280" height="707" />
     </state>
     <state x="299" y="99" key="#Customize_Data_Views/0.23.1280.707@0.23.1280.707" timestamp="1597256501338" />
+    <state x="128" y="23" key="#Project_Structure" timestamp="1597755174025">
+      <screen x="0" y="23" width="1280" height="710" />
+    </state>
+    <state x="128" y="23" key="#Project_Structure/0.23.1280.710@0.23.1280.710" timestamp="1597755174025" />
     <state x="478" y="238" key="#com.intellij.debugger.actions.ViewTextAction" timestamp="1597256490075">
       <screen x="0" y="23" width="1280" height="707" />
     </state>
     <state x="478" y="238" key="#com.intellij.debugger.actions.ViewTextAction/0.23.1280.707@0.23.1280.707" timestamp="1597256490075" />
-    <state x="104" y="23" width="1071" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597709528839">
+    <state x="104" y="23" width="1071" height="707" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597799500643">
       <screen x="0" y="23" width="1280" height="708" />
     </state>
-    <state x="104" y="23" width="1071" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.708@0.23.1280.708" timestamp="1597709528839" />
+    <state x="0" y="23" width="1071" height="707" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.707@0.23.1280.707" timestamp="1597794415203" />
+    <state x="104" y="23" width="1071" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.708@0.23.1280.708" timestamp="1597799500643" />
+    <state x="-91" y="23" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.710@0.23.1280.710" timestamp="1597755877322" />
+    <state x="345" y="185" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597793608792">
+      <screen x="0" y="23" width="1280" height="707" />
+    </state>
+    <state x="345" y="185" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1280.707@0.23.1280.707" timestamp="1597793608792" />
     <state x="453" y="90" key="#com.intellij.ide.util.MemberChooser" timestamp="1597700038569">
       <screen x="0" y="23" width="1280" height="710" />
     </state>
@@ -210,6 +234,10 @@
       <screen x="0" y="23" width="1280" height="708" />
     </state>
     <state x="377" y="174" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1280.708@0.23.1280.708" timestamp="1596903538830" />
+    <state x="254" y="72" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1597755037120">
+      <screen x="0" y="23" width="1280" height="710" />
+    </state>
+    <state x="254" y="72" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.23.1280.710@0.23.1280.710" timestamp="1597755037120" />
     <state x="560" y="136" width="389" height="480" key="#xdebugger.XInspectDialog" timestamp="1597256465973">
       <screen x="0" y="23" width="1280" height="707" />
     </state>
@@ -219,60 +247,60 @@
     </state>
     <state x="39" y="115" key="#xdebugger.evaluate/0.23.1280.707@0.23.1280.707" timestamp="1597243107924" />
     <state x="39" y="440" width="474" height="254" key="#xdebugger.evaluate/0.23.1280.708@0.23.1280.708" timestamp="1597597725569" />
-    <state width="1218" height="161" key="GridCell.Tab.0.bottom" timestamp="1597709530523">
+    <state width="1218" height="161" key="GridCell.Tab.0.bottom" timestamp="1597799564433">
       <screen x="0" y="23" width="1280" height="708" />
     </state>
-    <state width="1218" height="217" key="GridCell.Tab.0.bottom/0.23.1280.707@0.23.1280.707" timestamp="1597258992852" />
-    <state width="1218" height="161" key="GridCell.Tab.0.bottom/0.23.1280.708@0.23.1280.708" timestamp="1597709530523" />
-    <state width="1218" height="161" key="GridCell.Tab.0.bottom/0.23.1280.710@0.23.1280.710" timestamp="1597701555029" />
-    <state width="1218" height="161" key="GridCell.Tab.0.bottom/0.23.1280.713@0.23.1280.713" timestamp="1597697128293" />
-    <state width="1218" height="161" key="GridCell.Tab.0.center" timestamp="1597709530523">
+    <state width="1218" height="161" key="GridCell.Tab.0.bottom/0.23.1280.707@0.23.1280.707" timestamp="1597795495729" />
+    <state width="1218" height="161" key="GridCell.Tab.0.bottom/0.23.1280.708@0.23.1280.708" timestamp="1597799564433" />
+    <state width="1218" height="161" key="GridCell.Tab.0.bottom/0.23.1280.710@0.23.1280.710" timestamp="1597755905737" />
+    <state width="1218" height="161" key="GridCell.Tab.0.bottom/0.23.1280.713@0.23.1280.713" timestamp="1597790652023" />
+    <state width="1218" height="161" key="GridCell.Tab.0.center" timestamp="1597799564432">
       <screen x="0" y="23" width="1280" height="708" />
     </state>
-    <state width="1218" height="217" key="GridCell.Tab.0.center/0.23.1280.707@0.23.1280.707" timestamp="1597258992851" />
-    <state width="1218" height="161" key="GridCell.Tab.0.center/0.23.1280.708@0.23.1280.708" timestamp="1597709530523" />
-    <state width="1218" height="161" key="GridCell.Tab.0.center/0.23.1280.710@0.23.1280.710" timestamp="1597701555028" />
-    <state width="1218" height="161" key="GridCell.Tab.0.center/0.23.1280.713@0.23.1280.713" timestamp="1597697128292" />
-    <state width="1218" height="161" key="GridCell.Tab.0.left" timestamp="1597709530522">
+    <state width="1218" height="161" key="GridCell.Tab.0.center/0.23.1280.707@0.23.1280.707" timestamp="1597795495728" />
+    <state width="1218" height="161" key="GridCell.Tab.0.center/0.23.1280.708@0.23.1280.708" timestamp="1597799564432" />
+    <state width="1218" height="161" key="GridCell.Tab.0.center/0.23.1280.710@0.23.1280.710" timestamp="1597755905736" />
+    <state width="1218" height="161" key="GridCell.Tab.0.center/0.23.1280.713@0.23.1280.713" timestamp="1597790652022" />
+    <state width="1218" height="161" key="GridCell.Tab.0.left" timestamp="1597799564431">
       <screen x="0" y="23" width="1280" height="708" />
     </state>
-    <state width="1218" height="217" key="GridCell.Tab.0.left/0.23.1280.707@0.23.1280.707" timestamp="1597258992851" />
-    <state width="1218" height="161" key="GridCell.Tab.0.left/0.23.1280.708@0.23.1280.708" timestamp="1597709530522" />
-    <state width="1218" height="161" key="GridCell.Tab.0.left/0.23.1280.710@0.23.1280.710" timestamp="1597701555028" />
-    <state width="1218" height="161" key="GridCell.Tab.0.left/0.23.1280.713@0.23.1280.713" timestamp="1597697128292" />
-    <state width="1218" height="161" key="GridCell.Tab.0.right" timestamp="1597709530523">
+    <state width="1218" height="161" key="GridCell.Tab.0.left/0.23.1280.707@0.23.1280.707" timestamp="1597795495727" />
+    <state width="1218" height="161" key="GridCell.Tab.0.left/0.23.1280.708@0.23.1280.708" timestamp="1597799564431" />
+    <state width="1218" height="161" key="GridCell.Tab.0.left/0.23.1280.710@0.23.1280.710" timestamp="1597755905736" />
+    <state width="1218" height="161" key="GridCell.Tab.0.left/0.23.1280.713@0.23.1280.713" timestamp="1597790652022" />
+    <state width="1218" height="161" key="GridCell.Tab.0.right" timestamp="1597799564432">
       <screen x="0" y="23" width="1280" height="708" />
     </state>
-    <state width="1218" height="217" key="GridCell.Tab.0.right/0.23.1280.707@0.23.1280.707" timestamp="1597258992851" />
-    <state width="1218" height="161" key="GridCell.Tab.0.right/0.23.1280.708@0.23.1280.708" timestamp="1597709530523" />
-    <state width="1218" height="161" key="GridCell.Tab.0.right/0.23.1280.710@0.23.1280.710" timestamp="1597701555029" />
-    <state width="1218" height="161" key="GridCell.Tab.0.right/0.23.1280.713@0.23.1280.713" timestamp="1597697128292" />
-    <state width="1218" height="176" key="GridCell.Tab.1.bottom" timestamp="1597696866709">
-      <screen x="0" y="23" width="1280" height="710" />
+    <state width="1218" height="161" key="GridCell.Tab.0.right/0.23.1280.707@0.23.1280.707" timestamp="1597795495728" />
+    <state width="1218" height="161" key="GridCell.Tab.0.right/0.23.1280.708@0.23.1280.708" timestamp="1597799564432" />
+    <state width="1218" height="161" key="GridCell.Tab.0.right/0.23.1280.710@0.23.1280.710" timestamp="1597755905736" />
+    <state width="1218" height="161" key="GridCell.Tab.0.right/0.23.1280.713@0.23.1280.713" timestamp="1597790652022" />
+    <state width="1218" height="176" key="GridCell.Tab.1.bottom" timestamp="1597774486487">
+      <screen x="0" y="23" width="1280" height="708" />
     </state>
     <state width="1218" height="217" key="GridCell.Tab.1.bottom/0.23.1280.707@0.23.1280.707" timestamp="1597258992982" />
-    <state width="1218" height="176" key="GridCell.Tab.1.bottom/0.23.1280.708@0.23.1280.708" timestamp="1597690183408" />
+    <state width="1218" height="176" key="GridCell.Tab.1.bottom/0.23.1280.708@0.23.1280.708" timestamp="1597774486487" />
     <state width="1218" height="176" key="GridCell.Tab.1.bottom/0.23.1280.710@0.23.1280.710" timestamp="1597696866709" />
     <state width="1218" height="176" key="GridCell.Tab.1.bottom/0.23.1280.713@0.23.1280.713" timestamp="1597696827828" />
-    <state width="1218" height="176" key="GridCell.Tab.1.center" timestamp="1597696866709">
-      <screen x="0" y="23" width="1280" height="710" />
+    <state width="1218" height="176" key="GridCell.Tab.1.center" timestamp="1597774486484">
+      <screen x="0" y="23" width="1280" height="708" />
     </state>
     <state width="1218" height="217" key="GridCell.Tab.1.center/0.23.1280.707@0.23.1280.707" timestamp="1597258992982" />
-    <state width="1218" height="176" key="GridCell.Tab.1.center/0.23.1280.708@0.23.1280.708" timestamp="1597690183408" />
+    <state width="1218" height="176" key="GridCell.Tab.1.center/0.23.1280.708@0.23.1280.708" timestamp="1597774486484" />
     <state width="1218" height="176" key="GridCell.Tab.1.center/0.23.1280.710@0.23.1280.710" timestamp="1597696866709" />
     <state width="1218" height="176" key="GridCell.Tab.1.center/0.23.1280.713@0.23.1280.713" timestamp="1597696827827" />
-    <state width="1218" height="176" key="GridCell.Tab.1.left" timestamp="1597696866709">
-      <screen x="0" y="23" width="1280" height="710" />
+    <state width="1218" height="176" key="GridCell.Tab.1.left" timestamp="1597774486484">
+      <screen x="0" y="23" width="1280" height="708" />
     </state>
     <state width="1218" height="217" key="GridCell.Tab.1.left/0.23.1280.707@0.23.1280.707" timestamp="1597258992981" />
-    <state width="1218" height="176" key="GridCell.Tab.1.left/0.23.1280.708@0.23.1280.708" timestamp="1597690183408" />
+    <state width="1218" height="176" key="GridCell.Tab.1.left/0.23.1280.708@0.23.1280.708" timestamp="1597774486484" />
     <state width="1218" height="176" key="GridCell.Tab.1.left/0.23.1280.710@0.23.1280.710" timestamp="1597696866709" />
     <state width="1218" height="176" key="GridCell.Tab.1.left/0.23.1280.713@0.23.1280.713" timestamp="1597696827827" />
-    <state width="1218" height="176" key="GridCell.Tab.1.right" timestamp="1597696866709">
-      <screen x="0" y="23" width="1280" height="710" />
+    <state width="1218" height="176" key="GridCell.Tab.1.right" timestamp="1597774486486">
+      <screen x="0" y="23" width="1280" height="708" />
     </state>
     <state width="1218" height="217" key="GridCell.Tab.1.right/0.23.1280.707@0.23.1280.707" timestamp="1597258992982" />
-    <state width="1218" height="176" key="GridCell.Tab.1.right/0.23.1280.708@0.23.1280.708" timestamp="1597690183408" />
+    <state width="1218" height="176" key="GridCell.Tab.1.right/0.23.1280.708@0.23.1280.708" timestamp="1597774486486" />
     <state width="1218" height="176" key="GridCell.Tab.1.right/0.23.1280.710@0.23.1280.710" timestamp="1597696866709" />
     <state width="1218" height="176" key="GridCell.Tab.1.right/0.23.1280.713@0.23.1280.713" timestamp="1597696827828" />
     <state x="128" y="23" key="SettingsEditor" timestamp="1597709729450">
