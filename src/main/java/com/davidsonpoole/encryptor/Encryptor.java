@@ -37,7 +37,7 @@ public class Encryptor {
 
     public Encryptor() {
         frame = new JFrame();
-        frame.setTitle("Davidson's Encryptor");
+        frame.setTitle("Davidson's AES Encryptor");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(600, 400);
         frame.setResizable(false);
@@ -59,7 +59,7 @@ public class Encryptor {
         frame.add(p);
 
         p = new JPanel();
-        JLabel title = new JLabel("Welcome to Davidson's Encryptor.");
+        JLabel title = new JLabel("Welcome to Davidson's AES Encryptor.");
         title.setFont(title.getFont().deriveFont(22.0f));
         p.add(title);
         frame.add(p);

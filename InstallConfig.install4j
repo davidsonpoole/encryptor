@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <install4j version="8.0.8" transformSequenceNumber="8">
-  <directoryPresets config="/Users/davidson/Projects/encryptor/target/encryptor-1.0.jar" />
-  <application name="Encryptor" applicationId="7309-4186-0499-6997" mediaDir="/Users/davidson/Documents" shortName="encryptor" publisher="davidsonpoole" version="1.0" macVolumeId="7967f9126296844c" javaMinVersion="14" jdkMode="jdk" jdkName="JDK 14.0">
+  <directoryPresets config="/Users/davidson/Downloads" />
+  <application name="Davidson's AES Encryptor" applicationId="7309-4186-0499-6997" mediaDir="/Users/davidson/Documents" shortName="encryptor" publisher="davidsonpoole" version="1.0" macVolumeId="7967f9126296844c" javaMinVersion="14" jdkMode="jdk" jdkName="JDK 14.0">
     <jreBundles jdkProviderId="AdoptOpenJDK" release="openjdk14/jdk-14.0.2+12_openj9-0.21.0" />
   </application>
   <files>
@@ -14,12 +14,15 @@
   </files>
   <launchers>
     <launcher name="Encryptor" id="58">
-      <executable name="Encryptor" executableDir="source" executableMode="gui" />
+      <executable name="Davidson's Encryptor" iconSet="true" executableDir="source" executableMode="gui" />
       <java mainClass="com.davidsonpoole.encryptor.Encryptor">
         <classPath>
           <scanDirectory location="source" failOnError="false" />
         </classPath>
       </java>
+      <iconImageFiles>
+        <file path="/Users/davidson/Downloads/rsz_encryptor.png" />
+      </iconImageFiles>
     </launcher>
   </launchers>
   <installerGui>
@@ -459,6 +462,7 @@ return console.askYesNo(message, true);
     </macosFolder>
   </mediaSets>
   <buildIds buildAll="false">
-    <mediaSet refId="72" />
+    <mediaSet refId="60" />
+    <mediaSet refId="61" />
   </buildIds>
 </install4j>
